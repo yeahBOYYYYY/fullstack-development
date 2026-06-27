@@ -1,6 +1,6 @@
 # package.json file
 
-This is the project main dependency file, it tells NPM the configuration of your project.
+This is the project main dependency file, it tells [NPM](./index.md) the configuration of your project.
 
 ## Creating the file
 

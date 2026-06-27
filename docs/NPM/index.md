@@ -1,9 +1,11 @@
 # NPM 101
 
-NPM (Node Package Manager) is a [[JavaScript 101|JavaScript]] package manager (like PIP for Python).
+NPM (Node Package Manager) is a [JavaScript](../Front-End/JavaScript/index.md) package manager (like PIP for Python).
+
 ## How to install
 
-NPM comes preinstalled with [[Node.js 101|Node.js]].
+NPM comes preinstalled with [Node.js]().
+
 ## How to use
 
 To check the version of NPM you can use this,
@@ -13,7 +15,7 @@ npm -v
 npm --version
 ```
 
-To create a new project you need to create a new configuration file, meaning a new [[package.json]] file.
+To create a new project you need to create a new configuration file, meaning a new [package.json](./package.json.md) file.
 
 ### Download a dependency
 
@@ -23,9 +25,9 @@ To download a new library (module) that is needed as a dependency of the final p
 npm install --save <module-name>
 ```
 
-the `--save` flag is essential since it saves the module in the [[package.json]] as well.
+the `--save` flag is essential since it saves the module in the [package.json](./package.json.md) as well.
 
-Now given a [[package.json]] file, we can download all the dependencies needed using,
+Now given a [package.json](./package.json.md) file, we can download all the dependencies needed using,
 
 ```bash
 npm install
@@ -42,7 +44,8 @@ npm remove --save <module-name>
 npm rm --save <module-name>
 ```
 
-Again, the `--save` flag is essential since it deletes the module from the [[package.json]] as well.
+Again, the `--save` flag is essential since it deletes the module from the [package.json](./package.json.md) as well.
+
 ### Download a development dependency
 
 To download a new library (module) that is **not** needed as a dependency of the final project,
@@ -51,7 +54,7 @@ To download a new library (module) that is **not** needed as a dependency of the
 npm install --save-dev <module-name>
 ```
 
-the `--save-dev` flag is essential since it saves the module in the [[package.json]] as well.
+the `--save-dev` flag is essential since it saves the module in the [package.json](./package.json.md) as well.
 
 Note that by default when someone installs the dependencies of the project, it will also install the development dependencies, to disable that we can use,
 
@@ -70,7 +73,7 @@ npm remove --save-dev <module-name>
 npm rm --save-dev <module-name>
 ```
 
-Again, the `--save-dev` flag is essential since it deletes the module from the [[package.json]] as well.
+Again, the `--save-dev` flag is essential since it deletes the module from the [package.json](./package.json.md) as well.
 
 ### Dependency Version
 
