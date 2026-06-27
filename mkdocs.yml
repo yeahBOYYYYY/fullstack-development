@@ -1,0 +1,105 @@
+site_name: FullStack Development
+repo_url: https://github.com/yeahBOYYYYY/fullstack-development/
+repo_name: yeahBOYYYYY/fullstack-development
+site_description: A documentation site for FullStack development for beginners.
+site_author: Ron Mikhelman
+site_url: https://yeahBOYYYYY.github.io/fullstack-development/
+copyright: Copyright &copy; 2026 Ron Mikhelman
+
+markdown_extensions:
+  - toc:
+      permalink: "🔗"
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - pymdownx.blocks.caption
+
+theme:
+  name: material
+  language: en
+  favicon: assets/favicon.ico
+  logo: assets/favicon.ico
+
+  icon:
+    repo: fontawesome/brands/github
+  
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-3
+        name: Switch to system preference
+
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    # - navigation.instant
+    - toc.follow
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.share
+    - header.autohide
+
+plugins:
+  - search
+  - git-authors
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+  - glightbox:
+      auto_themed: true
+      auto_caption: true
+      caption_position: bottom
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yeahBOYYYYY
+      name: GitHub
+
+nav:
+  - Home: index.md
+  - Mathematics Bachelor:
+    - mathematics_bachelor/index.md
+    - Discrete Mathematics:
+      - Introduction to Logic: mathematics_bachelor/discrete_mathematics/introduction_to_logic.md
+      - Introduction to Set Theory: mathematics_bachelor/discrete_mathematics/introduction_to_set_theory.md
+      - Introduction to Combinatorics: mathematics_bachelor/discrete_mathematics/introduction_to_combinatorics.md
+      - Introduction to Graph Theory: mathematics_bachelor/discrete_mathematics/introduction_to_graph_theory.md
+      - Logic: mathematics_bachelor/discrete_mathematics/logic.md
+    - Analysis:
+      - Real Analysis 1: mathematics_bachelor/analysis/real_analysis_1.md
+      - Real Analysis 2: mathematics_bachelor/analysis/real_analysis_2.md
+  - Computer Science Bachelor:
+    - computer_science_bachelor/index.md
+    - Algorithms:
+      - Algorithms: computer_science_bachelor/algorithms/algorithms.md
+      - Data Structures: computer_science_bachelor/algorithms/data_structures.md
